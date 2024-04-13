@@ -63,7 +63,15 @@ public class ProdutoController {
 				.body(produto);
 	}
 	
-
+	public ResponseEntity<Object> apagarProduto(Integer id) {
+		
+		
+	@DeletemMapping("/produtos/{id}")
+	public ResponseEntity<Object> apagarProduto(
+			@PathVariable(Value = "id")Integer id) {
+		return null
+	}
+	
 	
 	
 }
